@@ -1,0 +1,96 @@
+<!-- Build a form that accepts a loan application.-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/validation.css">
+</head>
+<body>
+
+<!--Required Fields-->
+  First name: <br>
+  <input type="text" name="firstname">
+  <br><br>
+  Middle initial: <br>
+  <input type="text" name="middleinitial">
+  <br><br>
+  Last name: 
+  <br>
+  <input type="text" name="lastname">
+  <br><br>
+  Address: 
+  <br>
+  <input type="text" name="lastname">
+  <br><br>
+  Occupation:`  <br>
+  <input type="text" name="lastname">
+  <br><br>
+  Current Employer: 
+  <br>
+  <input type="text" name="lastname">
+  <br><br>
+  Employer Address: <br>
+  <input type="text" name="lastname">
+  <br><br>
+</form>
+
+<!--Type of loan select element options: -->
+<form>
+  <select name="loantype">
+    <option value="commercial">Commercial</option>
+    <option value="realestate">Real Estate</option>
+    <option value="personal">Personal</option>
+    <option value="mortgage">Mortgage</option>
+  </select>
+  <br><br>
+</form>
+
+<!-- Requested amount of loan -->
+<form>
+  Loan Amount Requested: <br>
+  <input type="text" name="amount">
+  <br><br>
+</form>
+
+<!--Radio button elements for loan length -->
+<form>
+  <input type="radio" name="years" value="five" checked>5 years<br>
+  <input type="radio" name="years" value="fifteen">15 years<br>
+  <input type="radio" name="years" value="thirty">30 years  
+  <br><br>
+</form> 
+
+<!--Checkbox group for special conditions-->
+<form action="">
+	<input type="checkbox" name="special" value="downpayment">I have a down payment<br>
+	<input type="checkbox" name="special" value="outofstate">Out-of-state resident <br>
+	<input type="checkbox" name="special" value="married">Married
+	<br>
+	<input type="checkbox" name="special" value="cosign">Loan will be co-signed 
+	<br><br>
+</form>
+
+<!--A text area to allow for additional comments -->
+<form action="">
+<textarea name="commentsbox" cols="50" rows="5">
+Enter any additional comments...
+</textarea>
+<br><br>
+</form>
+
+<!-- Additional Required fields -->
+<!-- Additional Form Validation added -->
+
+<form>
+  <label for="emailRequired">Email (required):</label>
+  <input type="email" id="emailRequired" name="emailRequired" required />
+  <br><br>
+  Phone number (required): <br>
+  <input type="tel" name="phoneNumber" required>
+  <br><br>
+  <label for="emailRequired">LinkedIn</label>
+  <input type="text" name="LinkedIn" requiured>
+  <br><br>
+</form>
+
+</body>
+</html>
